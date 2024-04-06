@@ -2,9 +2,11 @@ import { Outlet, Link } from "react-router-dom";
 const Layout = () => {
   return (
     <>
-    <nav class="navbar bg-dark" data-bs-theme="dark">
+    <nav class="navbar bg-black" data-bs-theme="dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">ICON</a>
+        {/* <a class="navbar-brand" href="#">ICON</a> */}
+        <a class="navbar-brand" href="#"><img src="/BoredGaming3.png" alt="Logo" /></a>
+
         <div id="navbarNav">
           <ul id="navbar-nav">
 
