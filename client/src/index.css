@@ -12,6 +12,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.black{
+  background-color: #1a1a1a;
+}
+
+.white{
+  background-color: white;
+}
 
 h1 {
   font-size: 3.2em;

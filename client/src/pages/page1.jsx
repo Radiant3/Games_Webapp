@@ -2,9 +2,16 @@ import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './pages.css'
+
+function Span({value,color}){
+  return (
+    <span style={{color:color}}>{value}</span>
+  )
+}
+
 function Square({ value, onSquareClick }) {
     return (
-      <button className="square" onClick={onSquareClick}>
+      <button className="square black" onClick={onSquareClick}>
         {value}
       </button>
     );
@@ -34,7 +41,7 @@ function Square({ value, onSquareClick }) {
   
     return (
       <>
-        <div className="status">{status}</div>
+        <div className="status"><Span value={status} color="white"></Span></div>
         <div className="board-row">
           <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
           <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
@@ -90,7 +97,7 @@ function Square({ value, onSquareClick }) {
   
     return (
       
-      <div className="game">
+      <div className="game black">
         {/* <Link to="/" className="top-right-button">Home</Link> */}
         <div className="game-board">
           <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
